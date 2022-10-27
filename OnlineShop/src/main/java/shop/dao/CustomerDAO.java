@@ -30,7 +30,7 @@ public class CustomerDAO {
 			st.setString(1,name);
 			st.setString(2, password);
 			ResultSet rs  = st.executeQuery();
-			if(rs.next()) {//複数人でないのでif
+			if(rs.next()) {
 				customerbean = new CustomerBean(rs.getString("name"),rs.getString("password"));
 			}
 			st.close();
