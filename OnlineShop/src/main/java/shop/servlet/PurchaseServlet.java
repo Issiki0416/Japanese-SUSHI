@@ -51,15 +51,15 @@ public class PurchaseServlet extends HttpServlet {
 			if(action == null) {
 				gotoPage(request,response,"/purchase.jsp");
 			}else if(action.equals("purchase")) {
-//				HttpSession session = request.getSession(true);
+	//				HttpSession session = request.getSession(true);
 				String name = request.getParameter("name");
 				String address = request.getParameter("address");
-				
-//				CartBean cart = (CartBean)session.getAttribute("cart");
+
+	//				CartBean cart = (CartBean)session.getAttribute("cart");
 				PurchaseDAO dao = new PurchaseDAO();
 				dao.saveInfo(cart, name, address);
 				session.removeAttribute("cart");
-	            gotoPage(request, response, "/purchase.jsp");
+				gotoPage(request, response, "/purchase.jsp");
 			}
 		}catch(Exception e) {
 			e.printStackTrace();
