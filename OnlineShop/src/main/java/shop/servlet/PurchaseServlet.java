@@ -54,10 +54,12 @@ public class PurchaseServlet extends HttpServlet {
 //				HttpSession session = request.getSession(true);
 				String name = request.getParameter("name");
 				String address = request.getParameter("address");
+//				int id = Integer.parseInt(session.getAttribute("customer"));
+				int id = (int) session.getAttribute("customer");
 				
 //				CartBean cart = (CartBean)session.getAttribute("cart");
 				PurchaseDAO dao = new PurchaseDAO();
-				dao.saveInfo(cart, name, address);
+				dao.saveInfo(cart, id, name, address);
 				session.removeAttribute("cart");
 	            gotoPage(request, response, "/purchase.jsp");
 			}
