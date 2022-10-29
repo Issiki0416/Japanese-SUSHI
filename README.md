@@ -5,7 +5,7 @@
 
 ## 内容：学校の課題をMVCを意識して再構築する
 
-## ![image](https://user-images.githubusercontent.com/96870513/198242691-835fe662-2fe0-4614-b917-d271ea9c3ccf.png)
+## <img width="1204" alt="image" src="https://user-images.githubusercontent.com/96870513/198840530-f5671344-4a20-499f-87f5-047faa9ffce9.png">
 
 ## 機能
 
@@ -29,3 +29,7 @@
 ---
 [Q]
 - daoでセッションを取得できないので（たぶんSessionスコープのせい？）purchase列に入れられない
+
+---
+## 廃棄処分
+## ![image](https://user-images.githubusercontent.com/96870513/198242691-835fe662-2fe0-4614-b917-d271ea9c3ccf.png)
