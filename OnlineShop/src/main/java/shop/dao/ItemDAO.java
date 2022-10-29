@@ -25,7 +25,7 @@ public class ItemDAO {
 	}
 	
 	public List<ItemBean> findAll() throws DAOException{
-		String sql = "SELECT * FROM product";
+		String sql = "SELECT * FROM items";
 		try(
 				Connection con = DriverManager.getConnection(url,user,password);
 				PreparedStatement st = con.prepareStatement(sql);
@@ -45,7 +45,7 @@ public class ItemDAO {
 			}
 	}
 	public ItemBean findById(int id) throws DAOException{
-		String sql = "SELECT * FROM product WHERE id = ?";
+		String sql = "SELECT * FROM items WHERE id = ?";
 		try(
 				Connection con = DriverManager.getConnection(url,user,password);
 				PreparedStatement st = con.prepareStatement(sql);){
@@ -55,6 +55,7 @@ public class ItemDAO {
 					String name = rs.getString("name");
 					int price = rs.getInt("price");
 					ItemBean bean = new ItemBean(id,name,price);
+					
 					return bean;
 				} else {
 					return null;

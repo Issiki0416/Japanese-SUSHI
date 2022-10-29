@@ -10,6 +10,9 @@ public class CustomerBean implements Serializable{
 	public int getId() {
 		return id;
 	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public String getName() {
 		return name;
 	}
@@ -24,7 +27,8 @@ public class CustomerBean implements Serializable{
 	}
 	public CustomerBean() {
 	}
-	public CustomerBean(String name, String password) {
+	public CustomerBean(int id ,String name, String password) {
+		this.id = id;
 		this.name = name;
 		this.password = password;
 	}
