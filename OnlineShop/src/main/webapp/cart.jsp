@@ -29,5 +29,6 @@
 			</tr>
 		</c:forEach>
 	</c:if>
+	<a href="/OnlineShop/ShowItemServlet">買い物を続ける</a>
 </body>
 </html>
