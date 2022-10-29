@@ -23,3 +23,9 @@
 
 [外部キー制約](https://www.javadrive.jp/postgresql/table/index11.html)
 
+[タイムスタンプ入力](https://www.itmedia.co.jp/enterprise/articles/0407/23/news002.html)
+[Bean](https://www.fenet.jp/java/column/java_tips/6570/)
+
+---
+[Q]
+- daoでセッションを取得できないので（たぶんSessionスコープのせい？）purchase列に入れられない
