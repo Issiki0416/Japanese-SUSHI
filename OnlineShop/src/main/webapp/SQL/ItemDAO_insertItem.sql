@@ -1,0 +1,17 @@
+insert into items values(1, 'まぐろ', 100);
+insert into items values(2, 'サーモン', 100);
+insert into items values(3, 'えび', 100);
+insert into items values(4, 'いか', 100);
+insert into items values(5, 'えんがわ', 100);
+insert into items values(6, 'あなご', 100);
+insert into items values(7, 'たまご', 100);
+insert into items values(8, 'ほたて', 100);
+insert into items values(9, '赤貝', 100);
+insert into items values(10, 'つぶ貝', 100);
+insert into items values(11, 'サラダ軍艦', 150);
+insert into items values(12, 'ねぎとろ軍艦', 150);
+insert into items values(13, 'ねぎとろ巻', 150);
+insert into items values(14, 'アボガド巻', 150);
+insert into items values(15, 'トロ', 200);
+insert into items values(16, 'いくら', 200);
+insert into items values(17, 'うに', 200);

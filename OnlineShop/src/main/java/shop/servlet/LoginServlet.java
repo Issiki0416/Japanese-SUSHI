@@ -60,7 +60,8 @@ public class LoginServlet extends HttpServlet {
 			CustomerBean customerbean =  customerdao.loginCheck(name, password);
 			
 			if(customerbean != null) {
-				session.setAttribute("customer", name);
+				customerbean.setId(customerbean.getId());
+				session.setAttribute("customer", customerbean.getId());
 				request.setAttribute("message", "ログインしました");
 				gotoPage(request,response,"/index.jsp");	
 			}else {

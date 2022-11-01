@@ -8,8 +8,8 @@
 <title>ログイン</title>
 </head>
 <body>
+	<jsp:include page="./include/menu.jsp"/>
 	<h1>ログイン</h1>
-	<%@include file="./include/menu.jsp" %>
 	<p>${message}</p>
 	<c:if test="${empty sessionScope.customer}">
 	<form action="/OnlineShop/LoginServlet" method="post">

@@ -23,15 +23,16 @@ public class CustomerDAO {
 		}
 	}
 	public CustomerBean loginCheck(String name, String password) throws DAOException {
-		String sql = "SELECT * FROM customer WHERE name = ? AND password = ?";
+		String sql = "SELECT * FROM customers WHERE name = ? AND password = ?";
 		try(
 			Connection con = DriverManager.getConnection(url,user,password);
 			PreparedStatement st = con.prepareStatement(sql);){
 			st.setString(1,name);
 			st.setString(2, password);
 			ResultSet rs  = st.executeQuery();
-			if(rs.next()) {
-				customerbean = new CustomerBean(rs.getString("name"),rs.getString("password"));
+			if(rs.next()) {//複数人でないのでif
+				customerbean = new CustomerBean(rs.getInt("id"),rs.getString("name"),rs.getString("password"));
+
 			}
 			st.close();
 			con.close();

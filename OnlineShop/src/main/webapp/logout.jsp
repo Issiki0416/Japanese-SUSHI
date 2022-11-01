@@ -9,8 +9,8 @@
 <title>ログアウト</title>
 </head>
 <body>
+	<jsp:include page="./include/menu.jsp"/>
 	<h3>ログアウト</h3>
-	<%@include file="./include/menu.jsp" %>
 	<c:if test="${empty sessionScope.customer}">
 	 	<p>ログインしていません</p>
 	 	<a href="/OnlineShop/LoginServlet"></a>
