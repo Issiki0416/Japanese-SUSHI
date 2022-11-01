@@ -32,6 +32,7 @@ public class CustomerDAO {
 			ResultSet rs  = st.executeQuery();
 			if(rs.next()) {//複数人でないのでif
 				customerbean = new CustomerBean(rs.getInt("id"),rs.getString("name"),rs.getString("password"));
+
 			}
 			st.close();
 			con.close();
